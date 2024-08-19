@@ -204,6 +204,7 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="help.h" />
     <ClInclude Include="HttpServer.h" />
+    <ClInclude Include="OnLineManage.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Server.h" />
@@ -213,6 +214,7 @@
     <ClCompile Include="Cards.cpp" />
     <ClCompile Include="CardsDlg.cpp" />
     <ClCompile Include="CardsManage.cpp" />
+    <ClCompile Include="CardStruct.cpp" />
     <ClCompile Include="CDlgMake.cpp" />
     <ClCompile Include="CDlgManage.cpp" />
     <ClCompile Include="CDlgMySQLConnect.cpp" />
@@ -221,6 +223,7 @@
     <ClCompile Include="CDlgSeting.cpp" />
     <ClCompile Include="help.cpp" />
     <ClCompile Include="HttpServer.cpp" />
+    <ClCompile Include="OnLineManage.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

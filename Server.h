@@ -53,6 +53,43 @@
 
 
 
+enum pack_type
+{
+	card_keep_alive	=	0xCFAC,
+
+
+
+	//公告
+	card_notice,
+	//卡密操作
+	card_look = 0xEB90,
+	//验证
+	card_verify,
+	//
+	card_exit,
+
+};
+
+#pragma pack(1)
+struct Pack_Header_t
+{
+	//保留, 值无效
+	USHORT reserve;
+	USHORT sType;
+	uint32_t nPackSize;
+	uint32_t nBobySize;
+
+};
+struct Pack_t
+{
+	Pack_Header_t Hdr;
+	BYTE Boby[1];
+
+};
+#pragma pack()
+typedef Pack_Header_t PACK_HEADER_T ,*PPACK_HEADER_T;
+typedef Pack_t PACK_T,*PPACK_T;
+
 class MyTcpListener:public CTcpServerListener
 {
 public:
